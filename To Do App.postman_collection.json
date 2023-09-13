@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "bf8a94f9-7afe-4729-8346-ba312af032b1",
+		"name": "To Do App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14741512"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users/store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"dalal bobes\",\r\n    \"email\" : \"dalalbobes0@gmail.com\",\r\n    \"phone\" : \"0930704021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userID\" : \"zhmasGzCRD-LQTlC5ywoLyYUliAJHZ4-KGADKPtg\",\r\n    \"name\" : \"dalal bobes\",\r\n    \"email\" : \"dalalbobes0@gmail.com\",\r\n    \"phone\" : \"0959572493\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/show",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userID\" : \"zhmasGzCRD-LQTlC5ywoLyYUliAJHZ4-KGADKPtg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userID\" : \"zhmasGzCRD-LQTlC5ywoLyYUliAJHZ4-KGADKPtg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/todo/store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userID\" : \"zhmasGzCRD-LQTlC5ywoLyYUliAJHZ4-KGADKPtg\",\r\n    \"content\" : \"write code node.js 5\",\r\n    \"date\" : \"2023 - 9 - 13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/todo/store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todo",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/todo/get/all?userId=zhmasGzCRD-LQTlC5ywoLyYUliAJHZ4-KGADKPtg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/todo/get/all?userId=zhmasGzCRD-LQTlC5ywoLyYUliAJHZ4-KGADKPtg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todo",
+						"get",
+						"all"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "zhmasGzCRD-LQTlC5ywoLyYUliAJHZ4-KGADKPtg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/todo/show?id=mtQBNDP7VHjDE47OSYPfJmsLKoE1zRqRqnutkOaI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/todo/show?id=mtQBNDP7VHjDE47OSYPfJmsLKoE1zRqRqnutkOaI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todo",
+						"show"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "mtQBNDP7VHjDE47OSYPfJmsLKoE1zRqRqnutkOaI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/todo/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"vprjmJ3CU-jNu8USpwcXi64Pe8E_sSmPxu689aUX\",\r\n    \"userID\" : \"tG5m-2wVNmRjE-fiHIlQrQs6T913THamQsnGgmxz\",\r\n    \"content\" : \"write code node.js 1 at 2 hours\",\r\n    \"date\" : \"2023 - 9 - 13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/todo/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todo",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/todo/delete/one",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"BVrvGv7zt0NVnmAcYKjBsCBIf0W7cZX9N74j2Ac_\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/todo/delete/one",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todo",
+						"delete",
+						"one"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/todo/delete/all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"tG5m-2wVNmRjE-fiHIlQrQs6T913THamQsnGgmxz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/todo/delete/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todo",
+						"delete",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
